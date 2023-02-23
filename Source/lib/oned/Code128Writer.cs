@@ -84,7 +84,7 @@ namespace ZXing.OneD
         /// <returns></returns>
         protected override bool[] encode(String contents, IDictionary<EncodeHintType, object> hints)
         {
-            if (hints != null && IDictionaryExtensions.IsBooleanFlagSet(hints, EncodeHintType.GS1_FORMAT))
+            if (IDictionaryExtensions.IsBooleanFlagSet(hints, EncodeHintType.GS1_FORMAT))
             {
                 // append the FNC1 character at the first position if not already present
                 if (!string.IsNullOrEmpty(contents) && contents[0] != ESCAPE_FNC_1)
@@ -106,7 +106,7 @@ namespace ZXing.OneD
                 forceCodesetB = IDictionaryExtensions.IsBooleanFlagSet(hints, EncodeHintType.CODE128_FORCE_CODESET_B);
 
                 // Check for forced code set hint.
-                if (hints != null && hints.ContainsKey(EncodeHintType.FORCE_CODE_SET))
+                if (hints.ContainsKey(EncodeHintType.FORCE_CODE_SET))
                 {
                     var hintCodeset = hints[EncodeHintType.FORCE_CODE_SET];
                     if (hintCodeset != null)
