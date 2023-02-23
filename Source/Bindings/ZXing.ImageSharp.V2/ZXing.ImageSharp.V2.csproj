@@ -16,7 +16,7 @@
     <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
     <EnableDefaultCompileItems>False</EnableDefaultCompileItems>
     <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>../../../Key/private.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>../../../Key/dummy-private.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 
   <ItemGroup>

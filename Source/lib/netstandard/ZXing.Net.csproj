@@ -14,7 +14,7 @@
     <PublicSign>false</PublicSign>
     <DebugType>portable</DebugType>
     <AssemblyName>zxing</AssemblyName>
-    <AssemblyOriginatorKeyFile>../../../Key/private.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>../../../Key/dummy-private.snk</AssemblyOriginatorKeyFile>
     <SignAssembly>true</SignAssembly>
     <PackageId>ZXing.Net</PackageId>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
