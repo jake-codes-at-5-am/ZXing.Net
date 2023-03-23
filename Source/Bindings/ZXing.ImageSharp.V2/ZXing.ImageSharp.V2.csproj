@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <VersionPrefix>0.16.15</VersionPrefix>
-    <TargetFrameworks>netstandard2.0;net60</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;netstandard2.1;net472;netcoreapp2.1;netcoreapp3.1</TargetFrameworks>
     <CheckEolTargetFramework>false</CheckEolTargetFramework>
     <DefineConstants>$(DefineConstants);NETSTANDARD</DefineConstants>
     <PlatformTarget>anycpu</PlatformTarget>
@@ -29,12 +29,8 @@
     <Compile Include="BarcodeReader.Extensions.cs" />
   </ItemGroup>
 
-  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
+  <ItemGroup>
     <PackageReference Include="SixLabors.ImageSharp" Version="2.1.3" />
-  </ItemGroup>
-
-  <ItemGroup Condition="'$(TargetFramework)' == 'net60'">
-    <PackageReference Include="SixLabors.ImageSharp" Version="3.0.0" />
   </ItemGroup>
 
   <ItemGroup>
